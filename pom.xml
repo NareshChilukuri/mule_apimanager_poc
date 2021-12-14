@@ -36,7 +36,7 @@
 				<environment>Sandbox</environment>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
-				<applicationName>mule_apimanager_poc</applicationName>
+				<applicationName>muleapimanagerpoc</applicationName>
 				<password>Chilukuri123</password>
 		        <region>us-east-1</region>
 				<muleVersion>4.4.0-20211026</muleVersion>	
