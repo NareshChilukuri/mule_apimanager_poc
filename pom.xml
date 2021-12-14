@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.mycompany</groupId>
+	<groupId>3777423e-3736-491b-9e25-d400595bf9f2</groupId>
 	<artifactId>mule_apimanager_poc</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
@@ -29,6 +29,22 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+				<cloudHubDeployment>
+				<uri>https://anypoint.mulesoft.com</uri>
+				<username>Naresh_Dec21</username>
+				<environment>Sandbox</environment>
+				<workers>1</workers>
+				<workerType>Micro</workerType>
+				<applicationName>mule_apimanager_poc</applicationName>
+				<password>Chilukuri123</password>
+		        <region>us-east-1</region>
+				<muleVersion>4.4.0-20211026</muleVersion>	
+				<properties>
+				  <http.port>8081</http.port>
+				</properties>
+				</cloudHubDeployment>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -74,5 +90,14 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+	
+	<distributionManagement>
+           <repository>
+               <id>ExchangeRepository</id>
+               <name>Corporate Repository</name>
+               <url>https://maven.anypoint.mulesoft.com/api/v1/organizations/3777423e-3736-491b-9e25-d400595bf9f2/maven</url>
+               <layout>default</layout>
+           </repository>
+       </distributionManagement>	
 
 </project>
