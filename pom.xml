@@ -13,7 +13,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.4.0-20211026</app.runtime>
+		<app.runtime>4.4.0</app.runtime>
 		<mule.maven.plugin.version>3.5.2</mule.maven.plugin.version>
 	</properties>
 
@@ -39,7 +39,7 @@
 				<applicationName>muleapimanagerpoc</applicationName>
 				<password>Chilukuri123</password>
 		        <region>us-east-1</region>
-				<muleVersion>4.4.0-20211026</muleVersion>	
+				<muleVersion>4.4.0</muleVersion>	
 				<properties>
 				  <http.port>8081</http.port>
 				</properties>
