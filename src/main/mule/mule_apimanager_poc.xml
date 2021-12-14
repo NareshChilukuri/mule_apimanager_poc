@@ -11,6 +11,6 @@ http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/m
 	<api-gateway:autodiscovery apiId="17506910" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="89b1a2e3-5c99-4674-bfff-93eb7c852174" flowRef="mule_apimanager_pocFlow" />
 	<flow name="mule_apimanager_pocFlow" doc:id="62e3bcb6-3d2e-46c6-ae39-23de936ebac5" >
 		<http:listener doc:name="Listener" doc:id="9e18c1b7-b830-451f-8795-03e0c87acc30" config-ref="HTTP_Listener_config" path="/apimanager"/>
-		<set-payload value='#["API Manager POC"]' doc:name="Set Payload" doc:id="23aa9512-00b7-493f-bc77-342e666bfb30" />
+		<set-payload value='#["API Manager POC "]' doc:name="Set Payload" doc:id="23aa9512-00b7-493f-bc77-342e666bfb30" />
 	</flow>
 </mule>
